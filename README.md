@@ -68,10 +68,11 @@ This will give you this output (here combined with original image):
 
 ## Training on custom data
 
-LiDeRe training is simple: You can provide your data as jpg images and indexed png files and directly start training. Here we train on 4 labeled images.
+LiDeRe training is simple: You can provide your data as jpg images and indexed png files and directly start training. Here we train on 4 labeled images
+(download with `wget https://eckerlab.org/img/example/{bird.jpg,bird_seg.png,penguins.jpg,penguins_seg.png,sheep.jpg,sheep_seg.png,cow.jpg,cow_seg.png}`)
 
 ```python
-from lidere.datasets.simple import ImageFolderDataset
+from lidere.datasets.simple import ImageListDataset, ImageFolderDataset
 from lidere import LiDeRe, TimmBackbone, SemanticSegmentationTask, train_simple
 
 pairs = []

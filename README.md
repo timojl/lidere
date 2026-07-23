@@ -188,3 +188,16 @@ python -c "import torchvision; torchvision.datasets.VOCSegmentation(os.path.join
 ## License
 
 MIT (except weights)
+
+
+## Citation
+
+```
+@inproceedings{luddecke2026lidere,
+  title={LiDeRe: A Lightweight Readout for Fast and Data-Efficient Dense Prediction},
+  author={L{\"u}ddecke, Timo and Meier, Jan Frederik and van Delden, Jan and Ecker, Alexander},
+  booktitle={Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={2959--2971},
+  year={2026}
+}
+```

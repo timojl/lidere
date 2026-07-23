@@ -176,8 +176,10 @@ For semantic contour evaluation, you need to clone `edge_eval_python` to `third_
 git clone https://github.com/Walstruzz/edge_eval_python.git third_party/edge_eval_python
 ```
 
-
-
+- **Pascal VOC**
+```bash
+python -c "import torchvision; torchvision.datasets.VOCSegmentation(os.path.join(os.environ['DATA_ROOT']), download=True)"
+```
 
 - **Trans10K:** manual download from https://xieenze.github.io/projects/TransLAB/TransLAB.html, then place in `$DATA_ROOT/`. For faster training we resize the images to 800px.
 
